@@ -64,7 +64,7 @@ public class ReportCard {
     }
 
     /**
-     * Get the grades for the above courses.
+     * Get the grades for the above courses (10 Point Grading Scale).
      */
     public int[] getCourseGrades() {
         return mCourseGrade;
