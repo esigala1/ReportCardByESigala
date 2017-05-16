@@ -1,5 +1,7 @@
 package net.bplaced.esigala1.reportcard;
 
+import java.util.Arrays;
+
 /**
  * {@link ReportCard} represents a student's report card.
  *
@@ -66,5 +68,19 @@ public class ReportCard {
      */
     public int[] getCourseGrades() {
         return mCourseGrade;
+    }
+
+    /**
+     * Returns the string representation of the {@link ReportCard} object.
+     */
+    @Override
+    public String toString() {
+        return "ReportCard{" +
+                "mID='" + mID + '\'' +
+                ", mLastName='" + mLastName + '\'' +
+                ", mFirstName='" + mFirstName + '\'' +
+                ", mCourseName=" + Arrays.toString(mCourseName) +
+                ", mCourseGrade=" + Arrays.toString(mCourseGrade) +
+                '}';
     }
 }
