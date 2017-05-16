@@ -71,6 +71,16 @@ public class ReportCard {
     }
 
     /**
+     * Set the grade for a specific course (10 Point Grading Scale).
+     *
+     * @param index is the index of the course.
+     * @param grade is the grade of the course.
+     */
+    public void setCourseGrade(int index, int grade) {
+        mCourseGrade[index] = grade;
+    }
+
+    /**
      * Returns the string representation of the {@link ReportCard} object.
      */
     @Override
